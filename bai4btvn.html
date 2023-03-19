@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let arr=[1,3,5,67,6,5,8,4,2,5,3,45,7,7,9,8,76,4,3,4]
+    let php = 0;
+    for(let i=0;i<arr.length;i++){
+        php=0
+        for(let j=0;j<arr.length;j++){
+         if(arr[i]===arr[j]){
+            php++;
+            console.log("day la i"+arr[i]);
+            console.log("day la j"+arr[j]);
+         }console.log("day la php"+php);
+        }
+        if(php>1){
+        false
+    }else{
+        document.write("giá trị"+arr[i]+"không được lặp lại"+"<br>")
+    }
+    }
+</script>
