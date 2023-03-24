@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [1, 2, 3, 5, 6, 1, 2, 3, 3, 5, 7, 8]
+        let dem = 0
+        let y = arr[0]
+        for (let i = 0; i < arr.length; i++) {
+            
+            dem = 0
+            for (let f = 0; f < arr.length; f++) {
+                 if (arr[i] == arr[f]) {
+                  
+                    dem++
+                    
+                }
+            }
+                 if(dem>1){
+                    
+                }else{
+                    y=arr[i]
+                    console.log(y);
+                    break;
+                }
+               
+
+                } 
+               
+            
+        
+        
+        
+    </script>
+</body>
+
+</html>
