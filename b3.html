@@ -8,44 +8,16 @@
 </head>
 <body>
     <script>
-//         let arr = [1,2,3,5,4,9,10,8,3,5,7,6]
-//     //  let a = +prompt('Nhập tổng (nhỏ hơn 20):')
-//         let dem = 0     
-//         for (let i = 0; i < arr.length; i++) {
-            
-//             dem = 0
-//             for (let j = 0; j < arr.length; j++) {
-//                  if (arr[i] + arr[j]==12) {
-                  
-//                     dem++
-//     //                 alert("phần tử thứ nhất có giá trị: "+ arr[i])
-//     //    alert("phần tử thứ hai có giá trị: "+ arr[j])
-//     console.log(dem);
-                    
-//                 }
-                
-//             }
-       
-       
 
-//        if(dem>1){
-//     false
-// }else{
-//     break
-// }
- 
-
-// }4
-
-let arr = [1,2,1,2,3,5,7,8,4,0]
+let arr = [1,2,1,2,3,5,7,8,4,3,4,5,0]
         let dem = 0
        let a = +prompt("nhập tổng(nhỏ hon 15): ")
         for (let i = 0; i < arr.length; i++) {
             for (let f = 0; f < arr.length; f++) {
                  if (arr[i] + arr[f]==a) {
-                  if(dem<1&&(f-i)<=1){
+                  if(dem<1&&(f-i)==1){
                     dem++
-                    
+                
                     document.write("arr[i]:"+ arr[i]+"<br>");
                     document.write("arr[f]"+arr[f]+"<br>")
                     document.write("Khoảng cách giữa 2 phần tử:"+(f-i)+"<br>")}
@@ -57,11 +29,7 @@ let arr = [1,2,1,2,3,5,7,8,4,0]
                 
                
             }
-            
-                
-               
- 
-        
+   
     </script>
 </body>
 </html>

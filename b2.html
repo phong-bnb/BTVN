@@ -2,23 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Title</title>
 </head>
+<style>
+    td{
+        height: 100px;
+        width: 200px;
+    }
+    table{
+        border-collapse: collapse;
+        text-align: center;
+    }
+</style>
 <body>
-    <script>
-        let arr = [2,3,5,7,5,8,9,5,7,5,2,45,2,56]
-        let tong = 50
-        let t = arr[0]
-        let y = arr[0]
-        let u = arr[0]
-        for(let i= 0; i<arr.length;i++){
-            
-               
-            }
 
-        }
-    </script>
 </body>
 </html>
+<script !src="">
+    let sum = 0
+    let a = +prompt("nhập tổng cần check")
+    let arr = [1,32,10,3,54,30,6,7,8,9,10]
+    document.write("<table  >")
+    for (let i = 0; i < arr.length; i++) {
+
+        for (let j = i + 1; j <arr.length; j++) {
+            for (let k = j+1; k < arr.length; k++) {
+                sum = arr[i] + arr[j] + arr[k]
+                if ( a === sum ){
+                    document.write("<tr>")
+                    document.write("<td>các bộ ba thỏa mãn tổng bằng "+a)
+                    document.write("<td>arr["+i+"]="+arr[i])
+                    document.write("<td>arr["+j+"]="+arr[j])
+                    document.write("<td>arr["+k+"]="+arr[k])
+                }
+            }
+        }
+    }
+
+</script>
